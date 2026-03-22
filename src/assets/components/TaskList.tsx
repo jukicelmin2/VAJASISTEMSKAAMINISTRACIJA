@@ -6,6 +6,10 @@ type Props = {
 };
 
 function TaskList({ tasks, onToggleTask }: Props) {
+  if (tasks.length === 0) {
+    return <p>Ni nalog.</p>;
+  }
+
   return (
     <ul>
       {tasks.map((t) => (
