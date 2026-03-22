@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "20px", fontFamily: "Arial" }}>
       <Header />
       <TaskForm onAddTask={addTask} />
       <TaskList tasks={tasks} onToggleTask={toggleTask} />
