@@ -15,12 +15,18 @@ function TaskForm({ onAddTask }: Props) {
   };
 
   return (
-    <form onSubmit={submit}>
+    <form onSubmit={submit} style={{ marginBottom: "20px" }}>
+      <label style={{ display: "block", marginBottom: "5px" }}>
+        Dodaj novo nalogo:
+      </label>
+
       <input
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Nova naloga"
+        placeholder="Unesi novu nalogu"
+        style={{ marginRight: "10px" }}
       />
+
       <button type="submit">Dodaj</button>
     </form>
   );
